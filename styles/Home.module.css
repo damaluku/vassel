@@ -1,116 +1,436 @@
-.container {
-  padding: 0 2rem;
+.videoContainer {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  padding: 0;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
+.videoContainer video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  color: #f3f3f3;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.herosection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.intro {
+  flex: 2;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-content: center;
+}
+.intro p {
+  height: 100%;
+  font-size: 50px;
+  margin: 0;
+}
+
+.carousel {
   flex: 1;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider:before,
+.slider:after {
+  height: 100px;
+  width: 10px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #141414 0%, rgb(12, 12, 12) 100%);
+  z-index: 1;
+}
+
+.slider:before {
+  left: 0;
+  top: 0;
+}
+.slider:after {
+  right: 0;
+  top: 0;
+}
+
+.slide {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  animation: slide 10s linear infinite;
+}
+
+.slide svg {
+  font-size: 50px;
+  margin: 0 30px;
+  transition: 0.3s;
+}
+
+.slide svg:hover {
+  transform: scale(0.8);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.productDescription h2 {
+  text-align: left;
+}
+
+.productDescription p {
+  text-align: left;
+}
+
+.morebagImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bag1,
+.bagModel {
+  margin: 2rem 0;
+  border: 1px solid transparent;
+}
+
+.bag1 img,
+.bagModel img {
+  transition: 0.5s ease-in-out;
+  object-fit: cover;
+}
+.bag1 img:hover,
+.bagModel img:hover {
+  transform: scale(1.1);
+}
+
+.discriptionVid {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.descript {
+  flex: 1;
+  width: 80%;
+  line-height: 2rem;
+  margin: 5rem 0;
+}
+
+.descript p {
+  font-size: 18px;
+}
+
+.descriptVid {
+  flex: 2;
+
+  border: 1px solid #141414;
+}
+
+.descriptVid video {
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
+}
+
+.prem h2 {
+  text-align: left;
+}
+
+.premiumProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.premiumProducts div {
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.premiumProducts div h2 {
+  text-align: left;
+}
+
+.premiumProducts div img {
+  object-fit: cover;
+  transition: 0.3s;
+}
+.premiumProducts div img:hover {
+  transform: scale(1.1);
+}
+
+.advertVid {
+  max-width: 100%;
+  height: 400px;
+}
+
+.advertVid video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.performance h2 {
+  text-align: left;
+}
+
+.featureList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureList ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+}
+
+.featureList ul li {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.featureList ul li h2 {
+  text-align: left;
+}
+
+.featureList ul li div {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  transition: all 0.3s;
+}
+
+.featureList ul li img,
+.compareBag div img {
+  transition: all 0.3s;
+  object-fit: cover;
+}
+
+.featureList ul li img:hover,
+.compareBag div img:hover {
+  transform: scale(1.1);
+}
+
+.compareStyles h2 {
+  text-align: left;
+}
+
+.compareBag {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.compareBag div {
+  max-width: 100%;
+  flex: 1;
+}
+
+.compareBag div a {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  border: 1px solid #eaeaea;
+  z-index: 1;
+}
+
+.compareBag div a:hover {
+  color: #141414;
+}
+
+.compareBag div a::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #eaeaea;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.compareBag div a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.sizeList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sizeList ul li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #eaeaea;
+  min-height: 5rem;
+}
+
+.featureItem {
+  text-decoration: uppercase;
+  font-weight: bold;
+}
+
+.signupSection {
+  background-image: url("/bag4.webp");
+  background-color: rgb(41, 40, 40);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.formBox {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUp {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.footer {
+.signUp div {
+  width: 100%;
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
+.signUp div input {
+  width: 100%;
+  background: none;
   border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  padding: 1.5em;
+  margin: auto 1rem;
+  color: #eaeaea;
+  border-radius: 30px;
+  font-size: 1rem;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.sendIcon {
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  margin-top: 1rem;
 }
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+.sendIcon svg {
+  font-size: 50px;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  padding: 0;
+  cursor: pointer;
+  color: #eaeaea;
+  transition: all 0.3s;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.sendIcon svg:hover {
+  color: white;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media (min-width: 600px) {
+  .morebagImg {
+    flex-direction: row;
+  }
+
+  .premiumProducts {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .signUp div input {
+    width: 60%;
+  }
+
+  .productDescription,
+  .descript,
+  .prem,
+  .performance {
+    width: 60%;
+  }
+
+  .featureList ul li div {
+    width: 0;
+    height: 0;
+
+    transition: all 0.3s;
+  }
+
+  .featureList ul li {
+    display: flex;
+    gap: 4rem;
+    border-top: 2px solid #eaeaea;
+    padding: 1rem 0;
+    transition: all 0.3s;
+  }
+
+  .featureList ul li:hover div {
+    display: block;
+    transition: all 0.3s;
+    width: 350px;
+    height: 400px;
+  }
+
+  .featureList ul li h2 {
+    flex: 1;
+  }
+  .featureList ul li p {
+    flex: 2;
   }
 }

@@ -1,0 +1,31 @@
+.navbar {
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar div svg,
+.navbar div a {
+  font-size: 20px;
+}
+
+.navbar div a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  color: black;
+}
