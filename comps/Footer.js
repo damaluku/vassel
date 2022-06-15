@@ -14,17 +14,17 @@ const Footer = () => {
           <div className={styles.storeLinks}>
             <ul>
               <li>
-                <Link href="#">
+                <Link href="/">
                   <a>home</a>
                 </Link>
               </li>
               <li>
-                <Link href="#">
-                  <a>shop golf</a>
+                <Link href="/shopShoes">
+                  <a>shop shoes</a>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="/shopTennis">
                   <a>shop tennis</a>
                 </Link>
               </li>
@@ -33,18 +33,13 @@ const Footer = () => {
           <div className={styles.pageLinks}>
             <ul>
               <li>
-                <Link href="#">
+                <Link href="/about">
                   <a>about</a>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="/contact">
                   <a>contact</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <a>faq</a>
                 </Link>
               </li>
             </ul>

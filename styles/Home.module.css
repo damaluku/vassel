@@ -163,7 +163,6 @@
 
 .descriptVid {
   flex: 2;
-
   border: 1px solid #141414;
 }
 
@@ -272,7 +271,12 @@
 
 .compareBag div {
   max-width: 100%;
+  padding: 1rem;
   flex: 1;
+}
+
+.compareBag div h4 {
+  margin: 1rem 0;
 }
 
 .compareBag div a {
@@ -283,7 +287,6 @@
   transition: all 0.3s;
   position: relative;
   border: 1px solid #eaeaea;
-  z-index: 1;
 }
 
 .compareBag div a:hover {

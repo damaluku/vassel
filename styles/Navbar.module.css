@@ -29,3 +29,118 @@
   margin-left: 10px;
   color: black;
 }
+
+/* ...overlay... */
+.menu {
+  background: linear-gradient(to right bottom, #141414 50%, black);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.menu ul {
+  list-style: none;
+  position: relative;
+  transform: skewY(-15deg);
+}
+
+.menu ul li::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background-color: #eaeaea;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+
+.menu ul li:hover::before {
+  background-color: #fff;
+}
+
+.menu ul li::after {
+  content: " ";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #eaeaea;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+
+.menu ul li:hover::after {
+  background-color: #fff;
+}
+
+.menu ul li {
+  width: 100%;
+  background-color: #eaeaea;
+  padding: 15px;
+  position: relative;
+  z-index: var(--i);
+  transition: 0.5s;
+}
+
+.menu ul li:hover {
+  background-color: #fff;
+  transform: translateX(40px);
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #141414;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  transition: all 0.5s;
+}
+
+.menu ul li:hover a {
+  color: aqua;
+}
+
+.item:nth-child(5) {
+  --i: 1;
+}
+.item:nth-child(4) {
+  --i: 2;
+}
+.item:nth-child(3) {
+  --i: 3;
+}
+.item:nth-child(2) {
+  --i: 4;
+}
+.item:nth-child(1) {
+  --i: 5;
+}
+
+/* shadow */
+
+.menu ul li:last-child::after {
+  box-shadow: -100px 100px 20px rgba(255, 255, 255, 0.25);
+}
+
+/* close */
+
+.close {
+  position: absolute;
+  color: #fff;
+  top: 25px;
+  right: 25px;
+  transition: all 0.5s;
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
