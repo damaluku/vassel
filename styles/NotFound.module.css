@@ -1,8 +1,38 @@
 .notFound {
   text-align: center;
+  display: grid;
+  place-content: center;
+  transition: all 0.5s;
+  height: 90vh;
+  overflow: hidden;
+  background-image: url("/notFound.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-position-y: darken;
+  background-color: #eaeaea;
 }
 
-.notFound:hover {
-  transform: translateY(35px);
-  transition: transform 0.8s ease-in-out;
+.notFound div {
+  width: clamp(60vw, 80vw, 100vw);
+  height: clamp(40vw, 100%, 80vw);
+  line-height: 2rem;
+}
+
+.notFound div a,
+.notFound div p {
+  color: #141414;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+}
+
+.notFound div a {
+  transition: all 0.5s;
+  color: rgb(16, 145, 150);
+}
+
+.notFound div a:hover {
+  color: rgb(12, 243, 243);
 }

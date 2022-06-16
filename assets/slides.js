@@ -125,30 +125,30 @@ export const compareStyles = [
 ];
 
 // bags:
-export const bags = [
+export const shoes = [
   {
     id: 1,
-    name: "stand bag",
+    name: "comfortable",
     image: "/shoe1.webp",
   },
   {
     id: 2,
-    name: "cart bags",
+    name: "classy",
     image: "/shoe2.webp",
   },
   {
     id: 3,
-    name: "staff bags",
+    name: "stylish",
     image: "/shoe3.webp",
   },
   {
     id: 4,
-    name: "headcover",
+    name: "durable",
     image: "/shoe4.webp",
   },
   {
     id: 5,
-    name: "accessories",
+    name: "affordable",
     image: "/shoe5.webp",
   },
 ];
@@ -158,24 +158,24 @@ export const bags = [
 export const arrivals = [
   {
     id: 1,
-    name: "VLS Stand",
-    image: "/shoe6.webp",
+    name: "adidas",
+    image: "/shoe5.webp",
     description:
-      "The next generation of our award-winning, lightest, full-featured stand bag. Reduced weight, refined details and no compromises, the VLS was built for the walk.",
+      "The next generation of our award-winning, lightest, full-featured shoe. Reduced weight, refined details and no compromises, the adidas was built for the walk.",
   },
   {
     id: 2,
-    name: "Player III DXR",
+    name: "adidas",
     image: "/shoe7.webp",
     description:
-      "Performance strikes on the Player III with our innovative, lightweight material. Striking red carbon fiber legs and detailing give this best-seller a new look.",
+      "Performance strikes on the adidas with our innovative, lightweight material. Striking black fiber and detailing give this best-seller a new look.",
   },
   {
     id: 3,
-    name: "Prime Citrine",
+    name: "adidas",
     image: "/shoe2.webp",
     description:
-      "The Prime Citrine delivers bold, high-visibility style. Crafted from the finest materials, this tour bag is ideal for those who demand the most of their equipment.",
+      "The adidas delivers bold, high-visibility style. Crafted from the finest materials, this sneaker is ideal for those who demand the most of their footwear.",
   },
 ];
 
@@ -184,47 +184,47 @@ export const arrivals = [
 export const tennis = [
   {
     id: 1,
-    name: "stand bag",
+    name: "bold",
     image: "/tennis1.webp",
   },
   {
     id: 2,
-    name: "cart bags",
+    name: "captivating",
     image: "/tennis2.webp",
   },
   {
     id: 3,
-    name: "staff bags",
+    name: "confident",
     image: "/tennis3.webp",
   },
   {
     id: 4,
-    name: "headcover",
+    name: "stylish",
     image: "/tennis4.webp",
   },
   {
     id: 5,
-    name: "accessories",
+    name: "elegant",
     image: "/tennis5.webp",
   },
   {
     id: 6,
-    name: "staff bags",
+    name: "powerful",
     image: "/tennis6.webp",
   },
   {
     id: 7,
-    name: "headcover",
+    name: "motivating",
     image: "/tennis7.webp",
   },
   {
     id: 8,
-    name: "accessories",
+    name: "interesting",
     image: "/tennis8.webp",
   },
   {
     id: 9,
-    name: "accessories",
+    name: "strong",
     image: "/tennis9.webp",
   },
 ];

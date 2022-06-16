@@ -15,17 +15,21 @@ const NotFound = () => {
 
   return (
     <>
-      <div className={styles.notFound}>
-        <h2>Yeeeee!!!</h2>
-        <h3>we no find this your page for our site ohh</h3>
-        <p>
-          try look for am for another site or click the link below to return to
-          the home page.
-        </p>
-        <Link href="/">
-          <a>Homepage</a>
-        </Link>
-      </div>
+      <main className={styles.notFound}>
+        <div>
+          <p>
+            We looked everywhere for this page.
+            <br />
+            Are you sure the website URL is correct?
+            <br />
+            Get in touch with the site owner.
+          </p>
+          <br />
+          <Link href="/">
+            <a>Go back home</a>
+          </Link>
+        </div>
+      </main>
     </>
   );
 };

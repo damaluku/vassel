@@ -2,12 +2,21 @@ import React from "react";
 import styles from "../styles/contact.module.css";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <main className={styles.contact}>
         <div>
           <h2>Contact Us</h2>
-          <form action="">
+          <form
+            action=""
+            onSubmit={() => {
+              handleSubmit;
+            }}
+          >
             <label htmlFor="name" className={styles.label}>
               Name
             </label>

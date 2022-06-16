@@ -20,7 +20,7 @@ const Navbar = () => {
               setToggle(true);
             }}
           >
-            Vessel
+            Vassel
           </a>
         </div>
 
@@ -50,24 +50,24 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className={styles.item}>
-                <Link href="/shopShoes">
+                <Link href="/shoes">
                   <a
                     onClick={() => {
                       setToggle(false);
                     }}
                   >
-                    shopShoes
+                    Shoes
                   </a>
                 </Link>
               </li>
               <li className={styles.item}>
-                <Link href="/shopTennis">
+                <Link href="/tennis">
                   <a
                     onClick={() => {
                       setToggle(false);
                     }}
                   >
-                    shopTennis
+                    Tennis
                   </a>
                 </Link>
               </li>

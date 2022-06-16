@@ -29,6 +29,10 @@ export default function Home() {
     AOS.refresh();
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <Head>
@@ -38,7 +42,7 @@ export default function Home() {
         <section className={styles.videoContainer}>
           <video autoPlay muted playsInline loop>
             <source src="/bagvid2.mp4" />
-            <source src="/bagvid1.mp4" />
+            <source src="/bagvid3.mp4" />
           </video>
           <div className={styles.title}>
             <h1>prime-x</h1>
@@ -162,7 +166,7 @@ export default function Home() {
           <div className={styles.advertVid}>
             <video autoPlay muted playsInline loop>
               <source src="/bagvid4.mp4" />
-              <source src="/bagvid1.mp4" />
+              can not display video
             </video>
           </div>
         </section>
@@ -256,7 +260,13 @@ export default function Home() {
         </section>
         <section className={styles.signupSection}>
           <div className={styles.formBox}>
-            <form className={styles.signUp} data-aos="fade-up">
+            <form
+              className={styles.signUp}
+              data-aos="fade-up"
+              onSubmit={() => {
+                handleSubmit;
+              }}
+            >
               <h2>SIGN UP FOR EARLY ACCESS</h2>
               <div>
                 <input

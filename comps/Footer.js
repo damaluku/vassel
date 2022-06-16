@@ -19,13 +19,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/shopShoes">
-                  <a>shop shoes</a>
+                <Link href="/shoes">
+                  <a>shoes</a>
                 </Link>
               </li>
               <li>
-                <Link href="/shopTennis">
-                  <a>shop tennis</a>
+                <Link href="/tennis">
+                  <a>tennis</a>
                 </Link>
               </li>
             </ul>
@@ -48,17 +48,25 @@ const Footer = () => {
             <h4>follow us</h4>
             <div className={styles.socialLinks}>
               <div className={styles.icon}>
-                <a href="#">
+                <a
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <ImFacebook />
                 </a>
               </div>
               <div className={styles.icon}>
-                <a href="#">
+                <a
+                  href="https://instagram.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <BsInstagram />
                 </a>
               </div>
               <div className={styles.icon}>
-                <a href="#">
+                <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                   <BsTwitter />
                 </a>
               </div>
@@ -66,7 +74,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.copyright}>
-          <p>© 2022 VESSEL, All rights reserved.</p>
+          <p>© 2022 VASSEL, All rights reserved.</p>
         </div>
       </footer>
     </>

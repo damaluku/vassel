@@ -33,6 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .bags {
@@ -55,10 +56,6 @@
   flex: 1;
 }
 
-.carousel {
-  flex: 1;
-}
-
 .bags img {
   width: 100%;
   height: 100%;
@@ -71,32 +68,6 @@
   position: absolute;
   display: grid;
   place-content: center;
-}
-
-.carousel {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider {
-  width: 100%;
-  height: 100%;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  padding: 1rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.slide svg {
-  font-size: 40px;
 }
 
 /*  */
@@ -113,6 +84,10 @@
   display: grid;
   place-content: center;
   text-align: center;
+}
+.exp p,
+.expHeader h3 {
+  font-size: clamp(1rem, 1.5rem, 1.8rem);
 }
 
 .expHeader {
