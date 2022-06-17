@@ -41,8 +41,9 @@ export default function Home() {
       <main>
         <section className={styles.videoContainer}>
           <video autoPlay muted playsInline loop>
+            <source src="https://player.vimeo.com/external/370467553.sd.mp4?s=96de8b923370fb7fa8616d4e0b74eaf3fac9e576&profile_id=165&oauth2_token_id=57447761" />
             <source src="/bagvid2.mp4" />
-            <source src="/bagvid3.mp4" />
+            <source src="https://storage.coverr.co/videos/hjHSqcr402QWFl02jeeLyyOyC3PV6y6dda?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjU1NDcwNDM0fQ.5w6oqmUeegRcUwsrWpLEVdS2FveBS1rZ9Eu2C9a5XjE" />
           </video>
           <div className={styles.title}>
             <h1>prime-x</h1>
